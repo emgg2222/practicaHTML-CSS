@@ -1,0 +1,7 @@
+table > titulo {
+  font-weight: bold;
+}
+
+.fila {
+  border-bottom: 1px solid rgb(70, 70, 70);
+}

@@ -1,0 +1,55 @@
+
+.navbar-list {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.navbar-list > a{
+  padding: 1rem;
+  color: white;
+}
+
+nav {
+  display: inline-block;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+
+}
+
+nav li {
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav a{
+  display: block;
+  padding: 8px;
+
+}
+
+nav li .active {
+  color: #D20000;
+
+}
+
+nav li:hover
+{
+  color: #D20000;
+}
