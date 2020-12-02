@@ -1,20 +1,84 @@
 .container {
   background-color: white;  
-  display: flex;
-  flex-flow: row nowrap;
-  border:3px solid black;
-  align-items: center;
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: 2fr 1fr;
+
 
  
 }
 
 .imagenLogo {
-  border: 1px solid red;  
   height: 100vh;
   width: 100%;
   background: url('/images/login_ojo_sauron.jpg') center center no-repeat;
+  background-size: cover;
 }
 .login
 {
-  border: 2px solid green ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.div-login{
+  display: grid;
+  gap: 15px;
+  
+
+}
+
+input{
+  border:0;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  
+}
+
+.login a {
+  font-size: small;
+  text-decoration: none;
+  color: darkgrey
+}
+
+.login a:hover {
+  
+  color: black;
+}
+
+
+.login-title p{
+  font-size: small;
+  font-style: inherit;
+}
+
+.login-title h1 {
+  text-align: center;
+}
+
+.login button{
+  background-color: lightslategrey;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.85rem;
+  
+}
+
+.login button:hover{
+  
+ 
+  box-shadow: 1px 1px 5px #666; 
+  
+}
+
+.login-button {
+  text-align: center;
 }
