@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <nav id="navbar" class="navbar">
-        <img src="./images/OIP.png" alt="Logo Ojo Sauron">
-        <form action="dashboard.html" method="GET">
-            <input type="text" name="busqueda" id="busqueda" alt="Texto a Buscar">
-            <!--<i class="fa fa-search" aria-hidden="true"></i>-->
-        </form>
-        <ul class="navbar-list">
-            <li class="navbar-list"><a href="#destacados" class="active">Descatados</a></li>
-            <li class="navbar-list"><a href="#novedades">Novedades</a></li>
-            <li class="navbar-list"><a href="#series">Series</a></li>
-            <li class="navbar-list"><a href="#favoritos">Favoritos</a></li>
-            <li class="navbar-list"><a href="/">Cerrar sesión</a></li>
-        </ul>
-    </nav>
+    <div class="main">
+    
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/OIP.png" alt="Logo Ojo Sauron"> 
+                <h1>TBO</h1>
+            </div>
+            <div class="search">
+                <form action="dashboard.html" method="GET">
+                    <input type="text" name="busqueda" id="busqueda" alt="Texto a Buscar">
+                    <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+                </form>
+            </div>       
+            <div class="menu">
+                <ul class="navbar-list">
+                    <li class="navbar-list"><a href="#destacados" class="active">Descatados</a></li>
+                    <li class="navbar-list"><a href="#novedades">Novedades</a></li>
+                    <li class="navbar-list"><a href="#series">Series</a></li>
+                    <li class="navbar-list"><a href="#favoritos">Favoritos</a></li>
+                    <li class="navbar-list"><a href="/">Cerrar sesión</a></li>
+                </ul>
+            </div>       
+    </div>
+    <div class="header">
     <header>
         Cabecera
     </header>
+    </div>
+    <div class="contenido">
     <main>
         <section id="destacados">
             Carrusel Destacados
@@ -473,6 +486,11 @@
         </section>
     
     </main>
+    </div>
+    <div class="footer">
     <footer>Pie</footer>
+    </div>
+</div>
+    
 </body>
 </html>

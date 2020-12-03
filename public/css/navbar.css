@@ -1,4 +1,41 @@
 
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;  
+  border:3px solid green;
+}
+
+.menu {
+  width: 100%;
+
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+
+  width: 100%;
+
+  background-color: black;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.search {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 .navbar-list {
   list-style: none;
   padding: 0;
@@ -11,51 +48,32 @@
   color: white;
 }
 
-nav {
-  display: inline-block;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-nav ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
-
 }
 
-nav li {
+.menu li {
   display: inline;
   float: left;
   margin: 0;
   padding: 0;
-
 }
 
-nav a{
+.menu a{
   display: block;
   padding: 8px;
-
 }
 
-nav li .active {
-  color: #D20000;
-/*color: black;
-  background-color: white;*/
-
-
+.menu li .active {
+  
+  background-color: black;
 }
 
 nav a:hover
-{
-  color: #D20000;
-  /*color: black;
-  background-color: white;*/
-
+{ 
+  background-color: black;
 }
 
