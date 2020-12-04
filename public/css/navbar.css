@@ -1,9 +1,60 @@
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;  
-  border:3px solid green;
+position: fixed;
+background-color: black;
+width: 100%;
+top:0;
+left: 0;
+height: var(--navbar-height);
 }
+
+.logo {
+background: url('../images/OIP.png' ) top center no-repeat;
+height: var(--navbar-height);
+margin-left: 2rem;
+
+
+}
+
+.brand {
+  color: white;
+  font-size: 2rem;
+  height: var(--navbar-height);
+  margin-left: 2rem;  
+}
+
+
+#burger-checkbox {
+  display: none;
+}
+
+.burger-label {
+  background-color: black; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  
+  /* no es necesario para dispositivo táctil */
+  /* cursor: pointer; */
+}
+
+.burger-label:before {
+  content: '';
+  background-color: white;
+  width: 1.2rem;
+  height: 0.12rem;
+  position: absolute;
+  left: 0.45rem;
+  top: 0.65rem;
+
+  box-shadow: 0 0.25rem 0 0 white, 0 0.5rem 0 0 white;
+}
+
+
+
+
 
 .menu {
   width: 100%;
@@ -14,17 +65,7 @@
   align-items: center;
 }
 
-.logo {
 
-  width: 100%;
-
-  background-color: black;
-  display: flex;
-  padding: 10px;
-  justify-content: flex-start;
-  align-items: center;
-
-}
 
 .search {
   width: 100%;
