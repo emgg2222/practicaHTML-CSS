@@ -4,6 +4,7 @@
 
 :root {
     --navbar-height:3rem;
+    --color-first-letter: #d20000;
 }
 
 * {
