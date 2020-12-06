@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.css">
     <title>TBO</title>
 </head>
 <body>
+    
     <nav id="navbar" class="navbar">
         <div class="logo"></div>
         <div class="brand">TBO</div>
   
         <input type="checkbox" id="burger-checkbox" />
         <label for="burger-checkbox" class="burger-label"></label>
+        <div class="buscador">            
+            <form action="dashboard.html" method="GET">
+                <img src="./images/search-icon.png" alt="image_buscar" class="image-buscador">                    
+                <input type="text" name="busqueda" id="busqueda" alt="Texto a Buscar" class="input-buscador">                
+            </form>   
+        </div>   
+
+    
 
         <ul class="navbar-list">
             <li class="navbar-item"><a href="#destacados" class="active">Descatados</a></li>
@@ -26,31 +36,23 @@
       <header>
 
       </header>
-      <main>
+      <main class="main">
+       
         <section id="destacados">
             <article>
                 <img src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="">
                 <h1>X-men: El apocalipsys</h1>
-                <table>
-                    <tr class="fila">
-                        <td class="titulo">Año</td>
-                        <td>2016</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">Duración</td>
-                        <td>2h 24min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">País</td>
+                <table class="resumen-pelicula" border="1">
+                    <tr class="resumen-fila">
                         <td>Estados Unidos</td>
+                        <td>2016</td>
+                        <td>2h 24min</td>
+                    </tr>               
+                    <tr class="genero">                        
+                        <td colspan="3">Acción / Ciencia Ficción / Superhéroes</td>
                     </tr>
-                    <tr class="fila">
-                        <td class="titulo">Género</td>
-                        <td>Acción / Ciencia Ficción / Superhéroes</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">Clasificación</td>
-                        <td>+13 Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
+                    <tr class="clasificacion" >                        
+                        <td colspan="3" ><span class="mayor-13">+13</span> Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
                     </tr>
                 </table>
 

@@ -5,22 +5,14 @@ background-color: black;
 width: 100%;
 top:0;
 left: 0;
-height: var(--navbar-height);
+height: var(--navbar-height);;
 
 }
-
-/*.logo {
-background: url('../images/OIP.png' ) top center no-repeat;
-height: var(--navbar-height);
-margin-left: 2rem;
-
-
-}*/
 
 .brand {
   color: white;
   font-size: 2rem;
-  height: var(--navbar-height);
+  line-height: var(--navbar-height);
   text-align: center; 
   
 }
@@ -41,9 +33,6 @@ margin-left: 2rem;
   left: 0;
   width: 2.2rem;
   height: 2.2rem;
-  
-  /* no es necesario para dispositivo táctil */
-  /* cursor: pointer; */
 }
 
 .burger-label:before {
@@ -54,72 +43,75 @@ margin-left: 2rem;
   position: absolute;
   left: 0.45rem;
   top: 1rem;
-
   box-shadow: 0 0.45rem 0 0 white, 0 0.9rem 0 0 white;
 }
 
-
-
-
-
-
-
-.search {
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+/* cerrado */
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* abierto */
+#burger-checkbox:checked ~ .navbar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--navbar-height));
+  opacity: 0.85;
+}
 
 .navbar-list {
   list-style: none;
-  border: 1px solid darkgrey;
-  padding: 0;
-  margin: 0;
-  font-size: 1.1rem;
-  background-color: rgb(0, 0, 0);
-}
-
-.navbar-list > a{
-  padding: 1rem;
-  color: white;
-}
-
-.navbar ul {
-  list-style-type: none;
-  ;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  border-top: 1px solid darkgrey;
 }
 
 .navbar li {
-
-  margin: 0;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  
+  font-size: 1.5rem; 
+  text-align: center;  
 }
 
-.navbar a{
-  display: block;
-  color: white;
-  
-
-}
-
-.menu li .active {
-  
+.buscador{
   background-color: black;
+  padding:10px;
+  
 }
 
-nav a:hover
-{ 
-  background-color: black;
+.image-buscador {
+  width: 20px;
+	border: 0px;
+  position: relative;
+  border: 1px solid red;
+  top:1px;
+  background-color: white;
 }
 
+.search input {
+  width: 100%;
+  font-size: 0.9em;
+  border: none;
+  z-index: 1;
+ 
+
+}
+
+input[type='text']{
+  border:1px solid darkgrey;
+  height: 2rem;
+  font-size: 1.2rem; 
+  border-radius: 5px;  
+}
+
+
+
+
+/*.logo {
+background: url('../images/OIP.png' ) top center no-repeat;
+height: var(--navbar-height);
+margin-left: 2rem;
+
+
+}*/

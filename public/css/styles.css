@@ -1,10 +1,12 @@
 @import url('main.css');
 @import url('navbar.css');
 @import url('section.css');
+@import url('main.css')
 
 :root {
     --navbar-height:3rem;
     --color-first-letter: #d20000;
+    --max-width:900px;
 }
 
 * {
@@ -13,4 +15,9 @@
   
 html {
     scroll-behavior: smooth;
+}
+
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
