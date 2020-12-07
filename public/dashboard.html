@@ -3,494 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">   
+    <title>TBO</title>
 </head>
 <body>
-    <div class="main">
     
-        <div class="navbar">
-            <div class="logo">
-                <img src="./images/OIP.png" alt="Logo Ojo Sauron"> 
-                <h1>TBO</h1>
-            </div>
-            <div class="search">
-                <form action="dashboard.html" method="GET">
-                    <input type="text" name="busqueda" id="busqueda" alt="Texto a Buscar">
-                    <!--<i class="fa fa-search" aria-hidden="true"></i>-->
-                </form>
-            </div>       
-            <div class="menu">
-                <ul class="navbar-list">
-                    <li class="navbar-list"><a href="#destacados" class="active">Descatados</a></li>
-                    <li class="navbar-list"><a href="#novedades">Novedades</a></li>
-                    <li class="navbar-list"><a href="#series">Series</a></li>
-                    <li class="navbar-list"><a href="#favoritos">Favoritos</a></li>
-                    <li class="navbar-list"><a href="/">Cerrar sesión</a></li>
-                </ul>
-            </div>       
-    </div>
-    <div class="header">
-    <header>
-        Cabecera
-    </header>
-    </div>
-    <div class="contenido">
-    <main>
-        <section id="destacados">
-            Carrusel Destacados
-            <article>
-                <img src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="">
-                <h1>X-men: El apocalipsys</h1>
-                <table>
-                    <tr class="fila">
-                        <td class="titulo">Año</td>
-                        <td>2016</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">Duración</td>
+    <nav id="navbar" class="navbar">        
+        <div class="logo">TBO</div>  
+        <input type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-label"></label>
+        <div class="container-buscador">
+        <div class="buscador">
+            <form action="dashboard.html" method="GET"></form>
+                <input type="text" name="input" alt="Texto de búsqueda">
+            <form action="dashboard.html" method="GET"></form>
+          </div>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#destacados" class="active">Descatados</a></li>
+            <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+            <li class="navbar-item"><a href="#series">Series</a></li>
+            <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="navbar-item"><a href="/">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <header class="header">
+        <video src="./videos/VTS_01_0.VOB" autoplay poster="posterimage.jpg">
+            Tu navegador no admite el elemento <code>video</code>.
+          </video>
+      </header>
+      <main class="main">
+       
+        <section id="destacados" class="section">
+            <h1>DESTACADOS</h1>
+            <div class="flex-card-container">
+            <article class="article">  
+                <div class="imagen-pelicula">
+                    <img src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="">
+                </div>  
+                <div class="detalle-pelicula">
+                <h2>X-men: El apocalipsys</h2>
+                <table class="resumen-pelicula">
+                    <tr class="resumen-fila">
                         <td>2h 24min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">País</td>
+                        <td>2016</td>
                         <td>Estados Unidos</td>
+                    </tr>               
+                    <tr class="genero">                        
+                        <td colspan="3">Acción / Ciencia Ficción / Superhéroes</td>
                     </tr>
-                    <tr class="fila">
-                        <td class="titulo">Género</td>
-                        <td>Acción / Ciencia Ficción / Superhéroes</td>
-                    </tr>
-                    <tr class="fila">
-                        <td class="titulo">Clasificación</td>
-                        <td>+13 Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
+                    <tr class="clasificacion" >                        
+                        <td  ><span class="clasificacion-13">+13</span></td>
+                        <td colspan="2"> Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
                     </tr>
                 </table>
-
-
+            </div> 
             </article>
-            <article>
-                <img src="./images/artificial_inteligence.jpg" alt="">
-                <h1>Inteligencia Artificial</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2001</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
+            <article class="article">  
+                <div class="imagen-pelicula">
+                    <img src="./images/artificial_inteligence.jpg" alt="Inteligencia artificial Imagen">
+                </div>  
+                <div class="detalle-pelicula">
+                <h2>Inteligencia Artificial</h2>
+                <table class="resumen-pelicula">
+                    <tr class="resumen-fila">
                         <td>146 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
+                        <td>2001</td>
                         <td>Estados Unidos</td>
+                    </tr>               
+                    <tr class="genero">                        
+                        <td colspan="3">Drama / Ciencia Ficción</td>
                     </tr>
-                    <tr class="fila">
-                        <td>Genero</td>
-                        <td>Drama / Ciencia Ficción</td>
+                    <tr class="clasificacion" >                        
+                        <td  ><span class="clasificacion-7">+7</span></td>
+                        <td colspan="2"> Acción de ciencia ficción</td>
                     </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7 Acción de ciencia ficción</td>
-                    </tr>
-                    
                 </table>
-
+            </div> 
             </article>
-            <article>
-                <img src="./images/face_to_face.jpg" alt="">
-                <h1>Cara a cara</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
+
+            <article class="article">  
+                <div class="imagen-pelicula">
+                    <img src="./images/face_to_face.jpg" alt="Cara a cara">
+                </div>  
+                <div class="detalle-pelicula">
+                <h2>Cara a cara</h2>
+                <table class="resumen-pelicula">
+                    <tr class="resumen-fila">
+                        <td>138 min</td>
                         <td>1997</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>138</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
                         <td>Estados Unidos</td>
+                    </tr>               
+                    <tr class="genero">                        
+                        <td colspan="3">Acción</td>
                     </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
+                    <tr class="clasificacion" >                        
+                        <td><span class="clasificacion-18">+18</span></td>
+                        <td colspan="2"> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
                     </tr>
                 </table>
-
+            </div> 
             </article>
-            <article>
-                <img src="./images/hulk.jpg" alt="">
-                <h1>Hulk</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2003</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
+
+            <article class="article">  
+                <div class="imagen-pelicula">
+                    <img src="./images/hulk.jpg" alt="Hulk Imagen">
+                </div>  
+                <div class="detalle-pelicula">
+                <h2>Hulk</h2>
+                <table class="resumen-pelicula">
+                    <tr class="resumen-fila">
                         <td>128 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
+                        <td>2003</td>
                         <td>Estados Unidos</td>
+                    </tr>               
+                    <tr class="genero">                        
+                        <td colspan="3">Acción</td>
                     </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción / Ciencia Ficción</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
+                    <tr class="clasificacion" >                        
+                        <td><span class="clasificacion-13">+13</span></td>
+                        <td colspan="2"> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
                     </tr>
                 </table>
-
+            </div> 
             </article>
+          
+           
+        </div>
         
         </section>
-        <section id="novedades">
-            
-            Novedades
-            <article>
-                <img src="./images/los_4_fantasticos.jpg" alt="">
-                <h1>Los 4 fantásticos</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2007</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>92</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Superhérores / Accion / Ciencia Ficción / Aventuras</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Intensas escenas de acción violenta, lenguaje e insinuación</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/los_otros.jpg" alt="">
-                <h1>Los otros</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2001</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>104 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos / España / Francia</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Suspense / Terror</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Terror</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/mummy-movie-brendan-fraser.jpg" alt="">
-                <h1>La momia</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>1999</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>124 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos / Francia</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción / Aventura / Fantasía</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7 Secuencias de violencia, acción y destrucción</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/the_tourist.jpg" alt="">
-                <h1>El turista</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2020</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>2010</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos / Francia</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Suspense</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7  Acción</td>
-                    </tr>
-                </table>
-
-            </article>
-        </section>
-        <section id="series">Series
-            <article>
-                <img src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="">
-                <h1>X-men: El apocalipsis</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2016</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>2h 24min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción / Ciencia Ficcion / Superhérores</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7  Acción</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/artificial_inteligence.jpg" alt="">
-                <h1>Inteligencia artificial</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2001</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>146 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Drama / Ciencia Ficción</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7  Acción de ciencia ficción</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/face_to_face.jpg" alt="">
-                <h1>Cara a cara</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>1997</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>138 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13  Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/hulk.jpg" alt="">
-                <h1>Hulk</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2003</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>128 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Accion / Ciencia Ficción</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13  Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
-                    </tr>
-                </table>
-
-            </article>
-        </section>
-        <section id="favoritos">Favoritos
-            <article>
-                <img src="./images/los_4_fantasticos.jpg" alt="">
-                <h1>Los 4 fantásticos</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td></td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>2007</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Superhérores / Accion / Ciencia Ficción / Aventuras</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Intensas escenas de acción violenta, lenguaje e insinuación</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/los_otros.jpg" alt="">
-                <h1>Los otros</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2001</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>104 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos / España / Francia</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Suspense / Terror</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+13 Terror</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/mummy-movie-brendan-fraser.jpg" alt="">
-                <h1>La momia</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>1999</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>124 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Acción / Aventura / Fantasía</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7 Secuencias de violencia, acción y destrucción</td>
-                    </tr>
-                </table>
-
-            </article>
-            <article>
-                <img src="./images/the_tourist.jpg" alt="">
-                <h1>El turista</h1>
-                <table>
-                    <tr class="fila">
-                        <td>Año</td>
-                        <td>2010</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Duración</td>
-                        <td>103 min</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>País</td>
-                        <td>Estados Unidos / Francia</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Género</td>
-                        <td>Suspense</td>
-                    </tr>
-                    <tr class="fila">
-                        <td>Clasificación</td>
-                        <td>+7  Acción </td>
-                    </tr>
-                </table>
-
-            </article>
-        </section>
-    
-    </main>
-    </div>
-    <div class="footer">
-    <footer>Pie</footer>
-    </div>
-</div>
-    
+        <section id="novedades"></section>
+        <section id="series"></section>
+        <section id="favoritos"></section>  
+      </main>
 </body>
 </html>

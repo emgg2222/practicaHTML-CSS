@@ -1,7 +1,88 @@
-table > titulo {
+.article{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
+  height: 300px;
+
+  
+}
+
+.imagen-pelicula{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center top;
+ 
+
+  
+}
+.article .detalle-pelicula
+{
+  padding:15px;
+  background-color: rgba(255,255,255, 0.55);
+  overflow: hidden;
+  
+  
+}
+.resumen-pelicula td {
+  padding: 8px;
+ 
+}
+
+.clasificacion-13{
+ 
+  background-color: rgb(143, 123, 34);
+  padding:3px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 3px;
   font-weight: bold;
 }
 
-.fila {
-  border-bottom: 1px solid rgb(70, 70, 70);
+.clasificacion-7{
+ 
+  background-color: rgb(83, 136, 33);
+  padding:3px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.clasificacion-18{
+ 
+  background-color: rgb(204, 83, 35);
+  padding:3px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+
+  .flex-card-container{
+    display: flex;
+  }
+
+  .article{
+    padding: 0.5rem;
+    flex-basis: 50%;
+    
+    display: block;
+  }
+  
+  .article .detalle-pelicula
+  {
+    display:none;   
+    
+  }
+  .article .imagen-pelicula img {
+    height: 250px;
+   
+  }
+  
 }

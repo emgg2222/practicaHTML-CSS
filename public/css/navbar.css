@@ -1,79 +1,170 @@
 
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;  
-  border:3px solid green;
-}
-
-.menu {
-  width: 100%;
-
-  background-color: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+position: fixed;
+background-color: black;
+width: 100%;
+top:0;
+left: 0;
+height: var(--navbar-height);
 }
 
 .logo {
-
-  width: 100%;
-
-  background-color: black;
-  display: flex;
-  padding: 10px;
-  justify-content: flex-start;
-  align-items: center;
-
+  color: white;
+  font-size: 1.5rem;
+  line-height: var(--navbar-height);
+  text-align: center; 
+  font-family: tbo-font;  
 }
 
-.search {
-  width: 100%;
-  background-color: black;
+.logo::first-letter{
+  color: var(--color-first-letter);
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+.burger-label {
+  background-color: black; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.burger-label:before {
+  content: '';
+  background-color: white;
+  width: 1.4rem;
+  height: 0.12rem;
+  position: absolute;
+  left: 0.45rem;
+  top: 1rem;
+  box-shadow: 0 0.45rem 0 0 white, 0 0.9rem 0 0 white;
+}
+
+/* cerrado */
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* abierto */
+#burger-checkbox:checked ~ .container-buscador
+ {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
 }
 
+#burger-checkbox:checked ~ .navbar-list
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  justify-content: space-evenly;
+  background-color: black;
+  height: calc(100vh - var(--navbar-height));
+  opacity: 0.85;
+}
 
 .navbar-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.1rem;
+ 
 }
 
-.navbar-list > a{
-  padding: 1rem;
-  color: white;
+.navbar li {
+  font-size: 1.5rem; 
+  text-align: center;  
+
+}
+.navbar a {
+  color:white;
+  text-decoration: none;
 }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.menu li {
-  display: inline;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.menu a{
-  display: block;
-  padding: 8px;
-}
-
-.menu li .active {
-  
+.container-buscador
+{
+  display:none;
+  height: var(--navbar-height);
+  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid darkgrey;
   background-color: black;
+  line-height: var(--navbar-height);  
 }
 
-nav a:hover
-{ 
-  background-color: black;
+.buscador {
+  background-color: white;
+  background-image: url(../images/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding-left: 28px;
+  height: 30px;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  ;
+}
+
+.buscador input {
+  width: 100%;
+  height: 30px;
+  font-size: 1.1rem; 
+  z-index: 3;
+}
+
+.buscador input:focus {
+  outline: none;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .navbar .logo {
+    margin: 0 1rem;
+  }
+
+  .navbar .burger-label{
+    display:none;
+  }
+
+  .navbar-list {
+    display: flex; 
+  }
+
+  .container-buscador {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    
+  }
+ 
+  .navbar-list a {
+    color: white;
+    font-size: 1.2rem;
+    line-height: var(--navbar-height);
+    padding: 0.9rem 1rem;
+  }
+
+  .navbar-list a:hover {
+    background-color: grey;
+    
+  }
+
 }
 

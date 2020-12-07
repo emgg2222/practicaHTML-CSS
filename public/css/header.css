@@ -1,0 +1,6 @@
+.header {
+    margin-top: var(--navbar-height);
+    border:1px solid red;
+    display: absolute;   
+    padding: 3px;
+}
