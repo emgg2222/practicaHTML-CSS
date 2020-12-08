@@ -1,23 +1,17 @@
 .article{
-  padding: 10px;
+  padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  height: 300px;
-
-  
+  height: 300px;  
 }
 
 .imagen-pelicula{
   width: 100%;
   text-align: center;
-  overflow: hidden;
-  object-fit: cover;
-  object-position: center top;
- 
-
-  
+  overflow: hidden;   
 }
+
 .article .detalle-pelicula
 {
   padding:15px;
@@ -28,6 +22,7 @@
 }
 .resumen-pelicula td {
   padding: 8px;
+  text-align: justify;
  
 }
 
@@ -39,6 +34,9 @@
   font-size: 1.2rem;
   border-radius: 3px;
   font-weight: bold;
+  float: left;
+  margin-right: 1rem;
+  
 }
 
 .clasificacion-7{
@@ -49,6 +47,9 @@
   font-size: 1.2rem;
   border-radius: 3px;
   font-weight: bold;
+  float: left;
+  margin-right: 1rem;
+  
 }
 
 .clasificacion-18{
@@ -59,30 +60,73 @@
   font-size: 1.2rem;
   border-radius: 3px;
   font-weight: bold;
+  float: left;
+  margin-right: 1rem;
 }
 
 
 @media (min-width: 768px) {
-
-  .flex-card-container{
+  
+    .flex-card-container{
     display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
   }
 
   .article{
-    padding: 0.5rem;
-    flex-basis: 50%;
-    
-    display: block;
+    flex-basis: 50%;    
+    display: block;   
+    position: relative;
+
+    justify-content: space-between;
   }
   
   .article .detalle-pelicula
   {
-    display:none;   
+   
+    padding: 0.5rem;
+    height: 300px;
+    position: absolute;
+    top:0;
+    margin-left:-8px;
+    visibility: hidden;
+  
+    color:white;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.65);
+
     
   }
-  .article .imagen-pelicula img {
-    height: 250px;
+  .article .imagen-pelicula {
+    height: 100%;
+    border:1px solid white
    
   }
   
+
+  .detalle-pelicula h2 {
+    font-size: 1.1rem;
+  }
+  .resumen-pelicula
+  {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  
+  .clasificacion-7  {
+    font-size: 0.8rem;
+  }
+  .clasificacion-13  {
+    font-size: 0.8rem;
+  }
+  .clasificacion-18  {
+    font-size: 0.8rem;
+  }
+
+
+
+  .article:hover .detalle-pelicula{
+    visibility: visible;
+  }
+
 }

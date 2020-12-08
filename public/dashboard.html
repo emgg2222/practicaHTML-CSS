@@ -21,7 +21,7 @@
           </div>
         </div>
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="#destacados" class="active">Descatados</a></li>
+            <li class="navbar-item"><a href="#destacados" class="active">Destacados</a></li>
             <li class="navbar-item"><a href="#novedades">Novedades</a></li>
             <li class="navbar-item"><a href="#series">Series</a></li>
             <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
@@ -29,19 +29,23 @@
         </ul>
       </nav>
       <header class="header">
-        <video src="./videos/VTS_01_0.VOB" autoplay poster="posterimage.jpg">
-            Tu navegador no admite el elemento <code>video</code>.
-          </video>
+        <video class="video" autoplay loop
+            preload="auto"  id="preview-video" 
+            data-tracking-url="/tracking/view/50841-thank-you-for-watching-animation" 
+            data-tracking-timeout="0" 
+            src="https://static.videezy.com/system/resources/previews/000/050/841/original/200713-ThankYouForWatchingBW3D.mp4">
+            <source type="video/mp4" src="https://static.videezy.com/system/resources/previews/000/050/841/original/200713-ThankYouForWatchingBW3D.mp4">
+                Lo sentimos!! no se puede reproducir el video
+        </video>
+            
       </header>
-      <main class="main">
-       
+      <main class="main">       
         <section id="destacados" class="section">
             <h1>DESTACADOS</h1>
             <div class="flex-card-container">
-            <article class="article">  
-                <div class="imagen-pelicula">
-                    <img src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="">
-                </div>  
+            <article class="article">                  
+                    <img class="imagen-pelicula" src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="Apocalipsys X-men imagen">
+                
                 <div class="detalle-pelicula">
                 <h2>X-men: El apocalipsys</h2>
                 <table class="resumen-pelicula">
@@ -54,16 +58,14 @@
                         <td colspan="3">Acción / Ciencia Ficción / Superhéroes</td>
                     </tr>
                     <tr class="clasificacion" >                        
-                        <td  ><span class="clasificacion-13">+13</span></td>
-                        <td colspan="2"> Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
+                        <td colspan="3"><span class="clasificacion-13">+13</span> Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
                     </tr>
                 </table>
             </div> 
             </article>
-            <article class="article">  
-                <div class="imagen-pelicula">
-                    <img src="./images/artificial_inteligence.jpg" alt="Inteligencia artificial Imagen">
-                </div>  
+            <article class="article">                 
+                <img class="imagen-pelicula" src="./images/artificial_inteligence.jpg" alt="Inteligencia artificial Imagen">
+              
                 <div class="detalle-pelicula">
                 <h2>Inteligencia Artificial</h2>
                 <table class="resumen-pelicula">
@@ -76,17 +78,14 @@
                         <td colspan="3">Drama / Ciencia Ficción</td>
                     </tr>
                     <tr class="clasificacion" >                        
-                        <td  ><span class="clasificacion-7">+7</span></td>
-                        <td colspan="2"> Acción de ciencia ficción</td>
+                        <td colspan="3"><span class="clasificacion-7">+7</span> Acción de ciencia ficción</td>
                     </tr>
                 </table>
             </div> 
             </article>
 
-            <article class="article">  
-                <div class="imagen-pelicula">
-                    <img src="./images/face_to_face.jpg" alt="Cara a cara">
-                </div>  
+            <article class="article">                  
+                <img class="imagen-pelicula" src="./images/face_to_face.jpg" alt="Cara a cara image">            
                 <div class="detalle-pelicula">
                 <h2>Cara a cara</h2>
                 <table class="resumen-pelicula">
@@ -98,18 +97,15 @@
                     <tr class="genero">                        
                         <td colspan="3">Acción</td>
                     </tr>
-                    <tr class="clasificacion" >                        
-                        <td><span class="clasificacion-18">+18</span></td>
-                        <td colspan="2"> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
+                    <tr class="clasificacion" >                       
+                        <td colspan="3"> <span class="clasificacion-18">+18</span> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
                     </tr>
                 </table>
             </div> 
             </article>
 
-            <article class="article">  
-                <div class="imagen-pelicula">
-                    <img src="./images/hulk.jpg" alt="Hulk Imagen">
-                </div>  
+            <article class="article">                  
+                <img class="imagen-pelicula" src="./images/hulk.jpg" alt="Hulk Imagen">                 
                 <div class="detalle-pelicula">
                 <h2>Hulk</h2>
                 <table class="resumen-pelicula">
@@ -121,9 +117,9 @@
                     <tr class="genero">                        
                         <td colspan="3">Acción</td>
                     </tr>
-                    <tr class="clasificacion" >                        
-                        <td><span class="clasificacion-13">+13</span></td>
-                        <td colspan="2"> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
+                    <tr class="clasificacion" >                    
+                        
+                        <td colspan="3"> <span class="clasificacion-13">+13</span> Acción de ciencia ficción, violencia y breves escenas de desnudo parcial</td>
                     </tr>
                 </table>
             </div> 
