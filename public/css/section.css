@@ -11,17 +11,35 @@
   
 }
 
+.favorite-icon-active
+{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: 5px 10px; 
+    background: url('/images/heart-active.png') center center no-repeat;
+    background-size: 20px;
+  
+
+
+
+}
+
+
 .favorite-icon
 {
   width: 20px;
   height: 20px;
   position: absolute;
-  margin: 5px 10px;
-  background-image: url('/public/images/heart-active.png') ;
-  border:1px solid red;
+  margin: 5px 10px; 
+    background: url('/images/heart.png') center center no-repeat;
+    background-size: 20px;
+  
+
 
 
 }
+
 .imagen-pelicula{
   width: 100%;
   text-align: center;
