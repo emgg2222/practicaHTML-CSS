@@ -25,7 +25,7 @@
             <li class="navbar-item"><a href="#novedades">Novedades</a></li>
             <li class="navbar-item"><a href="#series">Series</a></li>
             <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
-            <li class="navbar-item"><a href="/">Cerrar sesión</a></li>
+            <li class="navbar-item"><a href="/index.html">Cerrar sesión</a></li>
         </ul>
       </nav>
       <header class="header">
@@ -39,11 +39,14 @@
         </video>
             
       </header>
-      <main class="main">       
-        <section id="destacados" class="section">
+      <main class="main">     
+        <div class="favorite-icon"></div>  
+        <section id="destacados" class="section light">
             <h1>DESTACADOS</h1>
             <div class="flex-card-container">
-            <article class="article">                  
+            <article class="article">
+                <div class="favorite-icon"></div>
+                
                     <img class="imagen-pelicula" src="./images/apocalypse-movies-xmen-apocalypse.jpg" alt="Apocalipsys X-men imagen">
                 
                 <div class="detalle-pelicula">
@@ -172,7 +175,7 @@
         </div>
         
         </section>
-        <section id="novedades">
+        <section id="novedades" class="section">
 
             <h1>NOVEDADES</h1>
             <div class="flex-card-container">
@@ -298,7 +301,7 @@
         </div> 
         </article>
         </section>
-        <section id="series">
+        <section id="series" class="section light">
             <h1>SERIES</h1>
             <div class="flex-card-container">
             <article class="article">                  
@@ -343,13 +346,13 @@
             </article>
 
             <article class="article">                  
-                <img class="imagen-pelicula" src="./images/face_to_face.jpg" alt="Cara a cara image">            
+                  <img class="imagen-pelicula" src="./images/face_to_face.jpg" alt="Cara a cara image">            
                 <div class="detalle-pelicula">
                 <h2>Cara a cara</h2>
                 <table class="resumen-pelicula">
                     <tr class="resumen-fila">
                         <td>138 min</td>
-                        <td>1997</td>
+                     asd   <td>1997</td>
                         <td>Estados Unidos</td>
                     </tr>               
                     <tr class="genero">                        
@@ -423,7 +426,7 @@
         </div> 
         </article>
         </section>
-        <section id="favoritos">
+        <section id="favoritos" class="section">
             <h1>FAVORITOS</h1>
             <div class="flex-card-container">
             <article class="article">                  
@@ -549,5 +552,8 @@
         </article>
         </section>  
       </main>
+      <footer class="footer">
+          pie pagina
+      </footer>
 </body>
 </html>

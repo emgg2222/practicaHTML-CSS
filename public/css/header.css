@@ -1,8 +1,8 @@
 .header {
     margin-top: var(--navbar-height);
-    border:1px solid red;
     display: absolute;   
-    padding: 3px;
+    padding: 3px 0px;
+    padding-bottom: 0px;
 }
 .video
 {
