@@ -4,3 +4,8 @@
     display: absolute;   
     padding: 3px;
 }
+.video
+{
+    width: 100%;
+    height: 100%;
+}
