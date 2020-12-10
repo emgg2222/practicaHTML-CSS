@@ -1,6 +1,7 @@
 .contenido-relacionado{
     display: flex;
     flex-direction: column;
+    background-color: darkgrey;
 }
 
 .contenido-relacionado .item
