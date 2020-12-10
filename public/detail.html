@@ -4,13 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 <body>
-    <nav></nav>
-    <section>Descripcion de la pelicula</section>
-    <section>Relacionados</section>
-    
+    <nav id="navbar" class="navbar">        
+        <div class="logo">TBO</div>  
+        <input type="checkbox" id="burger-checkbox" />
+        <label for="burger-checkbox" class="burger-label"></label>
+        <div class="container-buscador">
+        <div class="buscador">
+            <form action="dashboard.html" method="GET"></form>
+                <input type="text" name="input" alt="Texto de búsqueda">
+            <form action="dashboard.html" method="GET"></form>
+          </div>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#destacados" class="active">Destacados</a></li>
+            <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+            <li class="navbar-item"><a href="#series">Series</a></li>
+            <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="navbar-item"><a href="/index.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <div class="container-detail">
+          <div class="detalle-pelicula">
+              <h1>X-men: El apocalipsys</h1>
+                <video class="video" autoplay loop controls
+                    preload="auto"  id="preview-video" 
+                    data-tracking-url="/tracking/view/50841-thank-you-for-watching-animation" 
+                    data-tracking-timeout="0" 
+                    src="https://static.videezy.com/system/resources/previews/000/050/841/original/200713-ThankYouForWatchingBW3D.mp4">
+                    <source type="video/mp4" src="https://static.videezy.com/system/resources/previews/000/050/841/original/200713-ThankYouForWatchingBW3D.mp4">
+                        Lo sentimos!! no se puede reproducir el video
+                </video>
+                <div class="datos-pelicula">
+                    <table class="tabla-datos-pelicula">
+                        <tr class="fila">
+                            <td>2h 24min</td>
+                            <td>2016</td>
+                            <td>Estados Unidos</td>
+                        </tr>                    
+                       
+                        <tr class="fila">
+                            
+                            <td colspan="3">Acción / Ciencia Ficcion / Superhérores</td>
+                        </tr>
+                        <tr class="fila">
+                            <td colspan="3"><span class="clasificacion-13">+13</span> Secuencias de violencia, acción y destrucción, breve lenguaje fuerte y algunas imágenes sugestivas</td>
+                          
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                            <p>Un poderoso mutante que se cree que fue el primero de su clase, llamado En Sabah Nur gobernaba el antiguo Egipto hace cinco mil años. Para sostenerse y prolongar su vida, En Sabah Nur cambiaba de cuerpo trasladando su conciencia y su alma a los cuerpos de otros mutantes y consecuentemente adquiría sus poderes. Debido a eso fue sumando diversos poderes mutantes que consiguió al pasar de cuerpo en cuerpo. Cuando En Sabah Nur envejeció y se estaba llevando a cabo un nuevo proceso para transferir su conciencia a su último cuerpo el cual tenía un factor de curación, un grupo de soldados inconformes con su mandato, se rebelan y tratan de evitar
+                             que la transferencia se complete derribando el templo donde se encontraba. Los Cuatro Jinetes de En Sabah Nur tratan de sofocar la rebelión pero mueren preservando su cuerpo mientras la transferencia se completaba durante el derrumbe y queda sepultado vivo bajo los escombros entrando en un estado de coma.
+                            </p>
+                            <p>
+                            Miles de años más tarde en 1983, diez años después del ataque de Erik Lehnsherr a la Casa Blanca, el mundo ha comenzado a ver a los mutantes con mejores ojos a raíz de las acciones de Mystique en aquel incidente y Erik se ha convertido en un fugitivo buscado en todo el mundo con el alias de Magneto; el mutante que controla el metal ahora trabaja en una fundidora, se ha casado y vive en Polonia con su esposa Magda y su hija pequeña, Nina quién al igual que él, es una mutante que puede comunicarse con los animales. En una escuela de Estados Unidos, 
+                            el joven Scott Summers protagoniza un incidente ya que sus poderes mutantes se manifiestan por primera vez al disparar rayos ópticos de sus ojos. Su hermano mayor Alex sabe lo que le ocurre a Scott y lo lleva al instituto educativo del profesor Charles Xavier en el condado de Westchester, Nueva York, con la esperanza de que Xavier y Hank McCoy le enseñen a controlar sus habilidades. Scott allí conoce a la mutante telepática y telequinética, Jean Grey, y los dos desarrollan una atracción. Luego Hank le diseña a Scott unas gafas especiales que bloquean sus rayos ópticos, para evitar que estos se salgan de control.</p>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+          </div>
+          <div class="contenido-relacionado">2</div>
+      </div>
+      <footer class="footer">
+        <div class="copyright"> copyright @2020</div>
+        <ul class="social-media-link">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

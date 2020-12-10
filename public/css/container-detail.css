@@ -1,0 +1,33 @@
+.container-detail{
+    
+    margin-top: var(--navbar-height);
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-flow: column;
+}
+
+.detalle-pelicula
+{
+    padding: 8px;
+    background-color: rgb(109,109,109);
+}
+
+.detalle-pelicula h1 {
+    color: white;
+}
+
+.tabla-datos-pelicula {
+    color:white;
+}
+
+.tabla-datos-pelicula td {
+    text-align: justify;
+    border-bottom: 1px solid grey;
+    padding:15px;
+}
+
+.contenido-relacionado{
+    background-color: darkgrey;
+}
+
+
