@@ -1,0 +1,29 @@
+.footer {
+    height: var(--navbar-height);
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+}
+
+.copyright
+{
+    line-height: var(--navbar-height);
+    margin-left: 10px;
+    
+}
+
+.social-media-link{   
+    list-style: none;
+    display:flex; 
+}
+
+.social-media-link a {
+    color:white;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+}
+
+.social-media-link a:hover{
+    background-color: grey;
+}
