@@ -2,6 +2,10 @@
   background:darkgrey;
 }
 
+.enlace-section {
+  text-decoration-line: none;
+}  
+
 .article{
   padding: 0.5rem;
   display: grid;
@@ -19,10 +23,6 @@
   margin: 5px 10px; 
     background: url('/images/heart-active.png') center center no-repeat;
     background-size: 20px;
-  
-
-
-
 }
 
 
@@ -32,37 +32,41 @@
   height: 20px;
   position: absolute;
   margin: 5px 10px; 
-    background: url('/images/heart.png') center center no-repeat;
-    background-size: 20px;
-  
-
-
-
+  background: url('/images/heart.png') center center no-repeat;
+  background-size: 20px;
 }
 
 .imagen-pelicula{
   width: 100%;
   text-align: center;
   overflow: hidden;   
-  width:200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+  
 }
 
 .article .detalle-pelicula
 {
   padding:15px;
   background-color: rgba(255,255,255, 0.55);
-  overflow: hidden;
-  
-  
+  overflow: hidden; 
+  height: 250px;
+  color:black;
+
 }
-.resumen-pelicula td {
-  padding: 8px;
-  text-align: justify;
- 
+.article .detalle-pelicula h2
+{
+  margin:0;
+
 }
 
-.clasificacion-13{
- 
+.resumen-pelicula td {
+  padding: 8px;
+  text-align: justify; 
+}
+
+.clasificacion-13{ 
   background-color: rgb(143, 123, 34);
   padding:3px;
   color: white;
@@ -70,8 +74,7 @@
   border-radius: 3px;
   font-weight: bold;
   float: left;
-  margin-right: 1rem;
-  
+  margin-right: 1rem;  
 }
 
 .clasificacion-7{
@@ -104,7 +107,7 @@
   
     .flex-card-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 
   }
@@ -114,19 +117,18 @@
     display: block;   
     position: relative;
     justify-content: space-between;
-
+    min-width: 200px;
+    height: 250px;
   }
   
   .article .detalle-pelicula
-  {
-   
-    padding: 1rem;
-    height: 300px;
+  {   
+    padding: 0.80rem;
+    height: 250px;
     position: absolute;
     top:0;
     margin-left:-8px;
-    visibility: hidden;
-  
+    visibility: hidden;  
     color:white;
     font-weight: bold;
     background-color: rgba(0,0,0,0.65);
@@ -159,8 +161,6 @@
   .clasificacion-18  {
     font-size: 0.8rem;
   }
-
-
 
   .article:hover .detalle-pelicula{
     visibility: visible;

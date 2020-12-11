@@ -30,4 +30,11 @@
     width: 100%;
 }
 
+@media(min-width: 768px) 
+{
+    .container-detail{
+        grid-template-columns: 4fr 1fr;
+    }
+}
+
 
