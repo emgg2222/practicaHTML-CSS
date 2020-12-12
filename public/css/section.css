@@ -109,6 +109,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    overflow:hidden;
 
   }
 
@@ -137,8 +138,9 @@
   }
   .article .imagen-pelicula {
     height: 100%;
-    border:1px solid white;
+  
     min-width: 150px;
+    box-shadow: 2px 2px 10px;
    
   }
   

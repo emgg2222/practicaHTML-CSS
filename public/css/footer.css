@@ -16,6 +16,8 @@
 .social-media-link{   
     list-style: none;
     display:flex; 
+    margin:0;
+    padding:10px;
 }
 
 .social-media-link a {
@@ -24,6 +26,8 @@
     padding: 0.9rem 1rem;
 }
 
-.social-media-link a:hover{
-    background-color: grey;
+
+.icono {
+    width: 30px;
+    height: 30px;
 }

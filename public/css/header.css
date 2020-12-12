@@ -1,102 +1,83 @@
 .header {
     margin-top: var(--navbar-height);
-    height: 400px;
+    height: 300px;
     display: absolute;   
     padding: 3px 0px;
     padding-bottom: 0px;
     background-color: rgb(49, 49, 49);
-    
-}
-/* .video
-{
-    width: 100%;
-    height: 100%;
-} */
-
-
-.container {
-    width: 90%;
-    height: 90%;
-    position: relative;
-    margin: 0 auto 40px;   
-    margin-top:20px; 
-    perspective: 1100px;
-
-    
 }
 
 .carousel
 {
-   width: 100%;
-   height: 100%;
-   position:absolute;
-   transform: tranlateZ(-288px);
-   transform-style: preserve-3d;
-   transition: transform 1s;
-   animation: rotateInY 5s infinite linear;
+ width: 100%;
+ height: 100%;  
+   display: inline-flex;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  padding:0 10px;
 
 }
 
 .carousel .foto {
-    display:block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-   
-    
-    
-    border:2px solid rgba(0,0,0,0.8);
-    line-height: 116px;
-    color:white;
-    text-align: center;
-    font-weight: bold;
-    margin:0;
-    /* padding: 20px;
-    min-width: 600px;
-    height: 500px ; */
-    
+ 
+    min-width: 250px;
+    height: 150px;
+    margin-left: 10px;
+    white-space: nowrap;
+    padding: 4px;    
+    border:1px solid black;
+    object-fit: cover;
+    object-position: center top;
+    transition: 450ms all;
+    transform-origin: center left;
+    cursor:pointer;
 }
 
-.carousel figure{
-    display:block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-   
-    
-    
-    border:2px solid rgba(0,0,0,0.8);
-    line-height: 116px;
-    color:white;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    margin:0;
+.carousel .foto:hover {
+    min-width: 350px;
+    height: 250px;
+
 }
 
-/* @keyframes rotateInY {
-	0%   { transform: translateZ(-288px) rotateY(0deg);   }
-	100% { transform: translateZ(-288px) rotateY(360deg);    }
-    } */
+
+
+
+
 
 .carousel .foto:nth-child(1) {
-    background: url('http://lorempixel.com/800/800/technics/1') center center
+    background: url('/images/los_otros.jpg') center center
       no-repeat;
     background-size: cover;
-   
   }
   
  .carousel  .foto:nth-child(2) {
-    background: url('http://lorempixel.com/1400/1000/technics/2') center center
+    background: url('/images/mummy-movie-brendan-fraser.jpg') center center
       no-repeat;
     background-size: cover;
-    
   }
   
 .carousel   .foto:nth-child(3) {
-    background: url('http://lorempixel.com/1400/1000/technics/3') center center
+    background: url('/images/the_tourist.jpg') center center
       no-repeat;
     background-size: cover;
+  }
+
+  .carousel .foto:nth-child(4) {
+    background: url('/images/apocalypse-movies-xmen-apocalypse.jpg') center center
+      no-repeat;
+    background-size: cover;
+  }
   
+ .carousel  .foto:nth-child(5) {
+    background: url('/images/artificial_inteligence.jpg') center center
+      no-repeat;
+    background-size: cover;
+  }
+  
+.carousel   .foto:nth-child(6) {
+    background: url('/images/face_to_face.jpg') center center
+      no-repeat;
+    background-size: cover;
   }
   
