@@ -26,23 +26,43 @@
     margin-left: 10px;
     white-space: nowrap;
     padding: 4px;    
-    border:1px solid black;
     object-fit: cover;
     object-position: center top;
     transition: 450ms all;
     transform-origin: center left;
     cursor:pointer;
+    position:relative;
 }
 
-.carousel .foto:hover {
+.carousel .foto:hover  {
     min-width: 350px;
     height: 250px;
+ 
+    
 
+}
+
+.foto:hover .title
+{
+    display:block;
+    opacity: 1;
 }
 
 
 
-
+.carousel .title {
+    position: absolute;
+    color:white;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0, 0.40);
+    display: none;
+    margin-left:-4px;
+    
+    
+    padding: 10px;
+    
+}
 
 
 .carousel .foto:nth-child(1) {
@@ -57,25 +77,21 @@
     background-size: cover;
   }
   
-.carousel   .foto:nth-child(3) {
-    background: url('/images/the_tourist.jpg') center center
-      no-repeat;
-    background-size: cover;
-  }
 
-  .carousel .foto:nth-child(4) {
+
+  .carousel .foto:nth-child(3) {
     background: url('/images/apocalypse-movies-xmen-apocalypse.jpg') center center
       no-repeat;
     background-size: cover;
   }
   
- .carousel  .foto:nth-child(5) {
+ .carousel  .foto:nth-child(4) {
     background: url('/images/artificial_inteligence.jpg') center center
       no-repeat;
     background-size: cover;
   }
   
-.carousel   .foto:nth-child(6) {
+.carousel   .foto:nth-child(5) {
     background: url('/images/face_to_face.jpg') center center
       no-repeat;
     background-size: cover;
