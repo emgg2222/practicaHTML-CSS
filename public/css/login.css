@@ -16,8 +16,17 @@
 
 .div-login h1 {
   text-align: center;
-  color: white
+  color: white;
+  font-family: tbo-font;  
+
 }
+
+.div-login h1::first-letter{
+  color: var(--color-first-letter);
+}
+
+
+
 
 .intro {
   color: white;

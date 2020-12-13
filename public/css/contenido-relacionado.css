@@ -1,8 +1,8 @@
-.contenido-relacionado{
-    display: flex;
-    flex-direction: column;
+
+.contenido-relacionado {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     background-color:  rgb(109,109,109);
-    height: var(--navar-heigh);
 }
 
 .contenido-relacionado .item
@@ -18,11 +18,20 @@
     height: 150px;
     object-fit: cover;
     object-position: center top;
+    
+}
+
+.detalle-item
+{
+    color: white;
+    text-align: justify;
 }
 
 
-@media(min-width: 768px) 
-{
-  
-
+@media (min-width: 768px) { 
+    .contenido-relacionado{
+        display: flex;
+        flex-direction: column;
+        height: var(--navar-heigh);
+    }
 }
